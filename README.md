@@ -23,7 +23,8 @@ USB Sound Reactive WLED Controller
 ## Entering Flash Mode
 
 To enter the Flash mode of the USBWLEDC, simply hold down the button as you connect the USB cable to a computer.
-Update: With Rev. 1.2, CH340C has auto reset functionality, there should be no need to press the button during connection. 
+
+\* Update: With Rev. 1.2, CH340C has auto reset functionality, there should be no need to press the button during connection. 
 
 ## WLED Config
 
@@ -40,14 +41,14 @@ Update: With Rev. 1.2, CH340C has auto reset functionality, there should be no n
 
 |Designators   |Footprint                                       |Quantity|Value                  |LCSC Part #|
 |--------------|------------------------------------------------|--------|-----------------------|-----------|
-|C1*,C2,C4,C9,C10 |Capacitor_SMD:C_0402_1005Metric                           |3    |100nF                  |C1525  |
+|C1*, C2, C4, C9, C10 |Capacitor_SMD:C_0402_1005Metric                           |5    |100nF                  |C1525  |
 |C3, C5, C7 |Capacitor_SMD:C_0603_1608Metric                           |3    |10uF                   |C96446  |
 |C6         |Capacitor_SMD:C_0402_1005Metric                           |1    |1uF                    |C52923  |
 |C8         |Capacitor_SMD:CP_Elec_5x5.4                               |1    |100uF                  |C7469983 |
 |J10        |Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV    |1    |USB-C Receptacle       |C2988369|
 |MK1*       |Microphone:Microphone-6pin                                |1    |GSA4737 MEMS Microphone|C5142171|
 |R1*        |Resistor_SMD:R_0402_1005Metric                            |1    |100k                   |C25741  |
-|R2,R3,R6,R7    |Resistor_SMD:R_0402_1005Metric                            |2    |10k                    |C1525  |
+|R2, R3, R6, R7    |Resistor_SMD:R_0402_1005Metric                            |4    |10k                    |C1525  |
 |R4, R5     |Resistor_SMD:R_0603_1608Metric                            |2    |5.1k                   |C23186  |
 |SW1        |Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A               |1    |Push Button Flash      |C318884 |
 |U2         |Package_TO_SOT_SMD:SOT-223-3_TabPin2                      |1    |AMS1117-3.3            |C6186   |
