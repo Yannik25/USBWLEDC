@@ -1,7 +1,7 @@
 # USBWLEDC
 USB Sound Reactive WLED Controller
 
-<img src="https://github.com/NandXor96/USBWLEDC/blob/main/images/animated.gif?raw=true" width="300" height="300" />
+<img src="https://github.com/Yannik25/USBWLEDC/blob/main/images/animated.gif?raw=true" width="300" height="300" />
 
 ## Features
 
@@ -14,15 +14,16 @@ USB Sound Reactive WLED Controller
 - Files for 3D printed case
 - Front side can be populated by JLCPCB
 
-<img src="https://github.com/NandXor96/USBWLEDC/blob/main/images/usbwledc_front.png?raw=true" width="250" height="300" /> <img src="https://github.com/NandXor96/USBWLEDC/blob/main/images/usbwledc_back.png?raw=true" width="250" height="300" /><img src="https://github.com/NandXor96/USBWLEDC/blob/main/images/usbwledc_real.png?raw=true" width="250" height="300" />
+<img src="https://github.com/Yannik25/USBWLEDC/blob/main/images/usbwledc_front.png?raw=true" width="250" height="300" /> <img src="https://github.com/Yannik25/USBWLEDC/blob/main/images/usbwledc_back.png?raw=true" width="250" height="300" /><img src="https://github.com/Yannik25/USBWLEDC/blob/main/images/usbwledc_real.png?raw=true" width="250" height="300" />
 
 ## Case
 
-<img src="https://github.com/NandXor96/USBWLEDC/blob/main/images/usbwledc_case.png?raw=true" width="275" height="375" />
+<img src="https://github.com/Yannik25/USBWLEDC/blob/main/images/usbwledc_case.png?raw=true" width="275" height="375" />
 
 ## Entering Flash Mode
 
 To enter the Flash mode of the USBWLEDC, simply hold down the button as you connect the USB cable to a computer.
+Update: With Rev. 1.2, CH340C has auto reset functionality, there should be no need to press the button during connection. 
 
 ## WLED Config
 
@@ -39,19 +40,22 @@ To enter the Flash mode of the USBWLEDC, simply hold down the button as you conn
 
 |Designators   |Footprint                                       |Quantity|Value                  |LCSC Part #|
 |--------------|------------------------------------------------|--------|-----------------------|-----------|
-|C1*, C2, C4|Capacitor_SMD:C_0603_1608Metric                           |3    |100nF                  |C14663  |
-|C3, C5, C7 |Capacitor_SMD:C_0805_2012Metric                           |3    |10uF                   |C15850  |
-|C6         |Capacitor_SMD:C_0603_1608Metric                           |1    |1uF                    |C15849  |
-|C8         |Capacitor_SMD:CP_Elec_5x5.4                               |1    |100uF                  |C131115 |
+|C1*,C2,C4,C9,C10 |Capacitor_SMD:C_0402_1005Metric                           |3    |100nF                  |C1525  |
+|C3, C5, C7 |Capacitor_SMD:C_0603_1608Metric                           |3    |10uF                   |C96446  |
+|C6         |Capacitor_SMD:C_0402_1005Metric                           |1    |1uF                    |C52923  |
+|C8         |Capacitor_SMD:CP_Elec_5x5.4                               |1    |100uF                  |C7469983 |
 |J10        |Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV    |1    |USB-C Receptacle       |C2988369|
 |MK1*       |Microphone:Microphone-6pin                                |1    |GSA4737 MEMS Microphone|C5142171|
-|R1*        |Resistor_SMD:R_0603_1608Metric                            |1    |100k                   |C25803  |
-|R2, R3     |Resistor_SMD:R_0603_1608Metric                            |2    |10k                    |C25804  |
+|R1*        |Resistor_SMD:R_0402_1005Metric                            |1    |100k                   |C25741  |
+|R2,R3,R6,R7    |Resistor_SMD:R_0402_1005Metric                            |2    |10k                    |C1525  |
 |R4, R5     |Resistor_SMD:R_0603_1608Metric                            |2    |5.1k                   |C23186  |
 |SW1        |Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A               |1    |Push Button Flash      |C318884 |
-|U1         |Package_SO:SOP-8_3.9x4.9mm_P1.27mm                        |1    |CH340N                 |C2977777|
 |U2         |Package_TO_SOT_SMD:SOT-223-3_TabPin2                      |1    |AMS1117-3.3            |C6186   |
-|U3**       |RF_Module:ESP32-WROOM-32                                  |1    |ESP32-WROOM-32         |C701341 |
+|U3**       |RF_Module:ESP32-WROOM-32E                                  |1    |ESP32-WROOM-32E         |C701341 |
+|U4 		|Package_SO:VSSOP-8_2.3x2mm_P0.5mm			|1 		|SN74LVC2T45DCUR 		|C15741 |
+|U5 		|Package_SO:SOIC-16_3.9x9.9mm_P1.27mm		|1 		|CH340C 				|C84681  |
+|Q1, Q2       |Package_TO_SOT_SMD:SOT-23                                |1    |L8050QLT1G        |C49581 |
+|D1       |Package_TO_SOT_SMD:SOT-143                               |1    |SP0503BAHT        |C2682275 |
 
 
 \* You can build it without the microphone. Then you don't need R1, C1 and MK1.
