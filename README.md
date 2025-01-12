@@ -46,16 +46,16 @@ To enter the Flash mode of the USBWLEDC, simply hold down the button as you conn
 |C6         |Capacitor_SMD:C_0402_1005Metric                           |1    |1uF                    |C52923  |
 |C8         |Capacitor_SMD:CP_Elec_5x5.4                               |1    |100uF                  |C7469983 |
 |J10        |Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV    |1    |USB-C Receptacle       |C2988369|
-|MK1*       |Microphone:Microphone-6pin                                |1    |GSA4737 MEMS Microphone|C5142171|
+|MK1*       |Microphone:Microphone-6pin                                |1    |ICS-43434 MEMS Microphone|C5656610|
 |R1*        |Resistor_SMD:R_0402_1005Metric                            |1    |100k                   |C25741  |
-|R2, R3, R6, R7    |Resistor_SMD:R_0402_1005Metric                            |4    |10k                    |C1525  |
+|R2, R3, R6, R7    |Resistor_SMD:R_0402_1005Metric                            |4    |10k                    |C25531  |
 |R4, R5     |Resistor_SMD:R_0603_1608Metric                            |2    |5.1k                   |C23186  |
 |SW1        |Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A               |1    |Push Button Flash      |C318884 |
 |U2         |Package_TO_SOT_SMD:SOT-223-3_TabPin2                      |1    |AMS1117-3.3            |C6186   |
 |U3**       |RF_Module:ESP32-WROOM-32E                                  |1    |ESP32-WROOM-32E         |C701341 |
 |U4 		|Package_SO:VSSOP-8_2.3x2mm_P0.5mm			|1 		|SN74LVC2T45DCUR 		|C15741 |
 |U5 		|Package_SO:SOIC-16_3.9x9.9mm_P1.27mm		|1 		|CH340C 				|C84681  |
-|Q1, Q2       |Package_TO_SOT_SMD:SOT-23                                |1    |L8050QLT1G        |C49581 |
+|Q1, Q2       |Package_TO_SOT_SMD:SOT-23                                |2    |L8050QLT1G        |C49581 |
 |D1       |Package_TO_SOT_SMD:SOT-143                               |1    |SP0503BAHT        |C2682275 |
 
 
